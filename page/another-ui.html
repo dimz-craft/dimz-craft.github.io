@@ -42,12 +42,18 @@
   
   <script>
         var referrer = document.referrer;
-
+        console.log(referrer);
+        
+        var paragraph = document.createElement("p");
+        
         if (referrer) {
-            document.write("<p>from: " + referrer + "</p>");
+            paragraph.textContent = "from: " + referrer;
         } else {
-            document.write("<p>direct. " + referrer + "</p>");
+            paragraph.textContent = "direct. " + referrer;
         }
+        
+        var bodyElement = document.body;
+        bodyElement.appendChild(paragraph);
     </script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
