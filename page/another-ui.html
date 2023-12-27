@@ -42,12 +42,11 @@
   
   <script>
         var referrer = document.referrer;
-        document.write("<h3>Selamat datang di website kami!</h3>");
 
         if (referrer) {
-            document.write("<p>Pengunjung datang dari: " + referrer + "</p>");
+            document.write("<p>from: " + referrer + "</p>");
         } else {
-            document.write("<p>Ini adalah pengunjung langsung.</p>");
+            document.write("<p>direct. " + referrer + "</p>");
         }
     </script>
   <script>
