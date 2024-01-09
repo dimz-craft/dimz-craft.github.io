@@ -48,8 +48,8 @@
         
         if (referrer) {
             paragraph.textContent = "from: " + referrer;
-        } else {
-            paragraph.textContent = "direct. " + referrer;
+        } else if (referrer) {
+            paragraph.textContent = "direct form: " + referrer;
         }
         
         var bodyElement = document.body;
